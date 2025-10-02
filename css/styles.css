@@ -1,0 +1,289 @@
+/* Estilos generales */
+body {
+    font-family: Arial, sans-serif;
+    margin: 0;
+    padding: 0;
+    background-image: url("../assets/fondo.jpg");
+    background-size: cover; /* La imagen cubrirá todo el fondo */
+    background-position: center center; /* Centra la imagen */
+    background-attachment: fixed; /* Hace que la imagen quede fija cuando se hace scroll */
+    background-repeat: no-repeat; /* Evita que la imagen se repita */
+}
+
+p{
+    color: white;
+}
+
+.titulo{
+    color: white;
+    text-align: center;
+    margin-bottom: 20px;
+}
+/* Header */
+header {
+    background-color: #333;
+    color: white;
+    text-align: center;
+    padding: 1px;
+}
+
+/* Barra de navegación */
+nav {
+    background-color: #444;
+}
+
+nav ul {
+    display: flex;
+    justify-content: space-between; /* o space-around o space-evenly */
+    list-style: none;
+    margin: 0;
+    padding: 0;
+}
+
+nav ul li {
+    flex: 1; /* Cada li ocupa el mismo espacio */
+    text-align: center;
+}
+
+nav ul li a {
+    display: block;
+    color: white;
+    text-decoration: none;
+    padding: 10px 20px;
+}
+
+nav ul li a:hover {
+    background-color: #575757;
+}
+
+/* Contenido Principal */
+main {
+    padding: 20px;
+    padding-bottom: 100px; /* igual a la altura del footer */
+}
+
+
+/* Footer */
+footer {
+    height: 50px; /* fija una altura */
+    background-color: #333;
+    color: white;
+    text-align: center;
+    padding: 10px;
+    position: fixed;
+    width: 100%;
+    bottom: 0;
+}
+
+/* css especifico */
+
+/* index/home */
+
+.carousel img{
+     display: block;     
+     margin: 10px auto;  
+}
+
+#carouselExample{
+    border-top-width: 1px;
+    margin-bottom: 40px;
+}
+
+
+/* nosotros */
+
+.nosotros h2 {
+    margin-bottom: 20px; /* Ajusta según lo que necesites */
+}
+
+/* Estilo de la imagen */
+#imagennosotros {
+    display: block;
+    margin: 0 auto 20px; /* Centra la imagen y le da margen abajo */
+    max-width: 100%; /* Hace que la imagen ocupe el 100% del ancho de su contenedor */
+    height: auto; /* Mantiene la proporción */
+    border-radius: 8px; /* Bordes redondeados */
+    box-shadow: 0 4px 10px rgba(0, 0, 0, 0.1); /* Sombra suave */
+}
+
+/* Estilo del texto */
+.nosotros p {
+    margin-top: 20px; /* Da espacio entre la imagen y el texto */
+    line-height: 1.6; /* Mejora la legibilidad */
+}
+
+/* galeriaa */
+
+.galeria {
+    display: flex;
+    flex-direction: column;
+    align-items: center;
+    gap: 40px; /* Espacio entre secciones */
+    padding: 20px;
+}
+
+.game-section {
+    text-align: center; /* Centra el título y las imágenes */
+}
+
+.game-section h2 {
+    font-size: 24px;
+    margin-bottom: 15px;
+}
+
+.imagenes {
+    display: flex;
+    flex-direction: column;
+    gap: 15px; /* Espacio entre las imágenes */
+    align-items: center; /* Centra las imágenes */
+}
+
+.galeria img {
+    width: 80%; /* Controla el tamaño de las imágenes */
+    max-width: 600px; /* Limita el tamaño máximo de las imágenes */
+    height: auto; /* Mantiene la proporción */
+    border-radius: 8px;
+    box-shadow: 0 4px 8px rgba(0, 0, 0, 0.1); /* Sombra suave */
+}
+
+
+
+
+
+
+/* contacto */
+
+#contactomain {
+    padding: 20px;
+    min-height: calc(100vh - 150px); /* deja espacio para header/footer */
+    box-sizing: border-box;
+    display: flex;
+    flex-direction: column;
+    align-items: center; /* centrado horizontal */
+    justify-content: flex-start; /* no queremos centrar vertical todo */
+}
+
+#formulario{
+    text-align: center;
+    width: 100%;
+    max-width: 500px; /* Limita el ancho máximo del formulario */
+    padding: 20px;
+    background-color: #ffffff;
+    border-radius: 8px;
+    margin-top: 100px;
+}
+
+
+.button-1 {
+  background-color: #EA4C89;
+  border-radius: 8px;
+  border-style: none;
+  box-sizing: border-box;
+  color: #FFFFFF;
+  display: inline-block;
+  font-size: 14px;
+  font-weight: 500;
+  height: 40px;
+  line-height: 20px;
+  list-style: none;
+  margin: 0;
+  padding: 10px 16px;
+  position: relative;
+  text-align: center;
+  vertical-align: baseline;
+}
+
+.button-1:hover {
+    background-color: #d63a76;   
+}
+
+/* productos */
+
+.grid-productos {
+  display: grid !important; /* fuerza que sea grid */
+  grid-template-columns: repeat(2, 1fr); /* 2 columnas iguales */
+  gap: 20px; /* espacio entre productos */
+  max-width: 1000px; /* ancho máximo opcional */
+  margin: 0 auto; /* centra el grid */
+}
+
+.grid-productos article {
+  border-radius: 8px;
+  padding: 15px;
+  text-align: center;
+  height: 100%;
+}
+
+.grid-productos img {
+  max-width: 100%;
+  height: auto;
+  border-radius: 4px;
+}
+
+/* para que cada artículo ocupe solo un grid cell */
+.grid-productos article:nth-child(n) {
+  grid-column: auto;
+  grid-row: auto;
+}
+
+.boton-comprar {
+  background-color: #28a745; 
+  color: white;
+  padding: 12px 24px;
+  font-size: 16px;
+  border: none;
+  border-radius: 8px;
+  font-weight: 600;
+  box-shadow: 0 4px 6px rgba(0, 0, 0, 0.1);
+  display: inline-block;
+}
+
+.boton-comprar:hover {
+  background-color: #218838;
+}
+
+/* Estilos responsivos para móviles */
+@media (max-width: 768px) {
+
+    /* estilos para nosotros.html*/
+    nav ul li {
+        width: 100%;                    /* Cada li ocupa todo el ancho */
+        border-bottom: 1px solid #555;  /* Línea divisoria opcional */
+    }
+
+    nav ul li a {
+        font-size: 14px;       /* más pequeño */
+        padding: 8px 10px;     /* menos espacio horizontal */
+        text-align: center;             /* Centra el texto */
+    }
+
+    footer {
+        position: static;
+        height: 63px;
+        padding: 8px;
+    }
+
+    /* Centrar texto en pantallas pequeñas */
+    .nosotros p {
+        text-align: center;
+        padding: 0 10px; /* Añade un pequeño padding para que no toque los bordes */
+    }
+
+    /* Hacer que la imagen ocupe el 100% del ancho en móviles */
+    #imagennosotros {
+        width: 100%;
+        margin-bottom: 20px; /* Deja espacio entre la imagen y el texto */
+    }
+
+    /* estilos para galeria.html*/
+
+    .galeria img {
+        width: 100%;
+    }
+
+    /* estilos para productos.html*/
+    .grid-productos {
+    grid-template-columns: 1fr;
+    gap: 10px; /* menos espacio en móvil */
+    }
+}

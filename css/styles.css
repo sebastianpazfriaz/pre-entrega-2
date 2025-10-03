@@ -4,10 +4,10 @@ body {
     margin: 0;
     padding: 0;
     background-image: url("../assets/fondo.jpg");
-    background-size: cover; /* La imagen cubrirá todo el fondo */
-    background-position: center center; /* Centra la imagen */
-    background-attachment: fixed; /* Hace que la imagen quede fija cuando se hace scroll */
-    background-repeat: no-repeat; /* Evita que la imagen se repita */
+    background-size: cover; 
+    background-position: center center; 
+    background-attachment: fixed;
+    background-repeat: no-repeat; 
 }
 
 p{
@@ -34,7 +34,7 @@ nav {
 
 nav ul {
     display: flex;
-    justify-content: space-between; /* o space-around o space-evenly */
+    justify-content: space-between; 
     list-style: none;
     margin: 0;
     padding: 0;
@@ -59,13 +59,13 @@ nav ul li a:hover {
 /* Contenido Principal */
 main {
     padding: 20px;
-    padding-bottom: 100px; /* igual a la altura del footer */
+    padding-bottom: 100px; 
 }
 
 
 /* Footer */
 footer {
-    height: 50px; /* fija una altura */
+    height: 50px; 
     background-color: #333;
     color: white;
     text-align: center;
@@ -93,7 +93,7 @@ footer {
 /* nosotros */
 
 .nosotros h2 {
-    margin-bottom: 20px; /* Ajusta según lo que necesites */
+    margin-bottom: 20px; 
 }
 
 /* Estilo de la imagen */
@@ -102,8 +102,8 @@ footer {
     margin: 0 auto 20px; /* Centra la imagen y le da margen abajo */
     max-width: 100%; /* Hace que la imagen ocupe el 100% del ancho de su contenedor */
     height: auto; /* Mantiene la proporción */
-    border-radius: 8px; /* Bordes redondeados */
-    box-shadow: 0 4px 10px rgba(0, 0, 0, 0.1); /* Sombra suave */
+    border-radius: 8px;
+    box-shadow: 0 4px 10px rgba(0, 0, 0, 0.1); 
 }
 
 /* Estilo del texto */
@@ -143,7 +143,7 @@ footer {
     max-width: 600px; /* Limita el tamaño máximo de las imágenes */
     height: auto; /* Mantiene la proporción */
     border-radius: 8px;
-    box-shadow: 0 4px 8px rgba(0, 0, 0, 0.1); /* Sombra suave */
+    box-shadow: 0 4px 8px rgba(0, 0, 0, 0.1); 
 }
 
 
@@ -155,12 +155,12 @@ footer {
 
 #contactomain {
     padding: 20px;
-    min-height: calc(100vh - 150px); /* deja espacio para header/footer */
+    min-height: calc(100vh - 150px);
     box-sizing: border-box;
     display: flex;
     flex-direction: column;
     align-items: center; /* centrado horizontal */
-    justify-content: flex-start; /* no queremos centrar vertical todo */
+    justify-content: flex-start; 
 }
 
 #formulario{
@@ -200,11 +200,11 @@ footer {
 /* productos */
 
 .grid-productos {
-  display: grid !important; /* fuerza que sea grid */
-  grid-template-columns: repeat(2, 1fr); /* 2 columnas iguales */
-  gap: 20px; /* espacio entre productos */
-  max-width: 1000px; /* ancho máximo opcional */
-  margin: 0 auto; /* centra el grid */
+  display: grid !important; 
+  grid-template-columns: repeat(2, 1fr); 
+  gap: 20px; 
+  max-width: 1000px; 
+  margin: 0 auto; 
 }
 
 .grid-productos article {
@@ -247,14 +247,14 @@ footer {
 
     /* estilos para nosotros.html*/
     nav ul li {
-        width: 100%;                    /* Cada li ocupa todo el ancho */
-        border-bottom: 1px solid #555;  /* Línea divisoria opcional */
+        width: 100%;                   
+        border-bottom: 1px solid #555;  
     }
 
     nav ul li a {
-        font-size: 14px;       /* más pequeño */
-        padding: 8px 10px;     /* menos espacio horizontal */
-        text-align: center;             /* Centra el texto */
+        font-size: 14px;       
+        padding: 8px 10px;     
+        text-align: center;             
     }
 
     footer {
@@ -263,16 +263,14 @@ footer {
         padding: 8px;
     }
 
-    /* Centrar texto en pantallas pequeñas */
     .nosotros p {
         text-align: center;
-        padding: 0 10px; /* Añade un pequeño padding para que no toque los bordes */
+        padding: 0 10px; 
     }
 
-    /* Hacer que la imagen ocupe el 100% del ancho en móviles */
     #imagennosotros {
         width: 100%;
-        margin-bottom: 20px; /* Deja espacio entre la imagen y el texto */
+        margin-bottom: 20px; 
     }
 
     /* estilos para galeria.html*/
@@ -284,6 +282,6 @@ footer {
     /* estilos para productos.html*/
     .grid-productos {
     grid-template-columns: 1fr;
-    gap: 10px; /* menos espacio en móvil */
+    gap: 10px;
     }
 }

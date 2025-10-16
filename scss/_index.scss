@@ -1,9 +1,15 @@
-.carousel img{
-     display: block;     
-     margin: 10px auto;  
+/* index.scss */
+
+/* Estilo para las imágenes del carousel */
+.carousel {
+  img {
+    display: block;
+    margin: 10px auto;
+  }
 }
 
-#carouselExample{
-    border-top-width: 1px;
-    margin-bottom: 40px;
+/* Estilos para el contenedor del carousel */
+#carouselExample {
+  border-top-width: 1px;
+  margin-bottom: 40px;
 }

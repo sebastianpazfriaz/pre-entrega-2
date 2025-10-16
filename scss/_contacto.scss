@@ -1,14 +1,16 @@
-#contactomain {
-    padding: 20px;
-    min-height: calc(100vh - 150px);
-    box-sizing: border-box;
-    display: flex;
-    flex-direction: column;
-    align-items: center; /* centrado horizontal */
-    justify-content: flex-start; 
-}
+/* contacto.scss */
 
-#formulario{
+/* Estilos para el contenedor principal de contacto */
+#contactomain {
+  padding: 20px;
+  min-height: calc(100vh - 150px);
+  box-sizing: border-box;
+  display: flex;
+  flex-direction: column;
+  align-items: center; /* centrado horizontal */
+  justify-content: flex-start;
+
+  #formulario {
     text-align: center;
     width: 100%;
     max-width: 500px; /* Limita el ancho máximo del formulario */
@@ -16,28 +18,28 @@
     background-color: #ffffff;
     border-radius: 8px;
     margin-top: 100px;
-}
 
+    .button-1 {
+      background-color: #EA4C89;
+      border-radius: 8px;
+      border-style: none;
+      box-sizing: border-box;
+      color: #FFFFFF;
+      display: inline-block;
+      font-size: 14px;
+      font-weight: 500;
+      height: 40px;
+      line-height: 20px;
+      list-style: none;
+      margin: 0;
+      padding: 10px 16px;
+      position: relative;
+      text-align: center;
+      vertical-align: baseline;
 
-.button-1 {
-  background-color: #EA4C89;
-  border-radius: 8px;
-  border-style: none;
-  box-sizing: border-box;
-  color: #FFFFFF;
-  display: inline-block;
-  font-size: 14px;
-  font-weight: 500;
-  height: 40px;
-  line-height: 20px;
-  list-style: none;
-  margin: 0;
-  padding: 10px 16px;
-  position: relative;
-  text-align: center;
-  vertical-align: baseline;
-}
-
-.button-1:hover {
-    background-color: #d63a76;   
+      &:hover {
+        background-color: #d63a76;
+      }
+    }
+  }
 }

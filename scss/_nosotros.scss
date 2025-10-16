@@ -1,21 +1,21 @@
-/* nosotros */
+/* nosotros.scss */
 
-.nosotros h2 {
-    margin-bottom: 20px; 
-}
+.nosotros {
+  h2 {
+    margin-bottom: 20px;
+  }
 
-/* Estilo de la imagen */
-#imagennosotros {
+  #imagennosotros {
     display: block;
     margin: 0 auto 20px; /* Centra la imagen y le da margen abajo */
     max-width: 100%; /* Hace que la imagen ocupe el 100% del ancho de su contenedor */
     height: auto; /* Mantiene la proporción */
     border-radius: 8px;
-    box-shadow: 0 4px 10px rgba(0, 0, 0, 0.1); 
-}
+    box-shadow: 0 4px 10px rgba(0, 0, 0, 0.1);
+  }
 
-/* Estilo del texto */
-.nosotros p {
+  p {
     margin-top: 20px; /* Da espacio entre la imagen y el texto */
     line-height: 1.6; /* Mejora la legibilidad */
+  }
 }

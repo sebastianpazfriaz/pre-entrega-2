@@ -1,33 +1,34 @@
-/* galeriaa */
+/* galeria.scss */
 
+/* Contenedor principal de la galería */
 .galeria {
-    display: flex;
-    flex-direction: column;
-    align-items: center;
-    gap: 40px; /* Espacio entre secciones */
-    padding: 20px;
-}
+  display: flex;
+  flex-direction: column;
+  align-items: center;
+  gap: 40px; /* Espacio entre secciones */
+  padding: 20px;
 
-.game-section {
+  .game-section {
     text-align: center; /* Centra el título y las imágenes */
-}
+    
+    h2 {
+      font-size: 24px;
+      margin-bottom: 15px;
+    }
+    
+    .imagenes {
+      display: flex;
+      flex-direction: column;
+      gap: 15px; /* Espacio entre las imágenes */
+      align-items: center; /* Centra las imágenes */
 
-.game-section h2 {
-    font-size: 24px;
-    margin-bottom: 15px;
-}
-
-.imagenes {
-    display: flex;
-    flex-direction: column;
-    gap: 15px; /* Espacio entre las imágenes */
-    align-items: center; /* Centra las imágenes */
-}
-
-.galeria img {
-    width: 80%; /* Controla el tamaño de las imágenes */
-    max-width: 600px; /* Limita el tamaño máximo de las imágenes */
-    height: auto; /* Mantiene la proporción */
-    border-radius: 8px;
-    box-shadow: 0 4px 8px rgba(0, 0, 0, 0.1); 
+      img {
+        width: 80%; /* Controla el tamaño de las imágenes */
+        max-width: 600px; /* Limita el tamaño máximo de las imágenes */
+        height: auto; /* Mantiene la proporción */
+        border-radius: 8px;
+        box-shadow: 0 4px 8px rgba(0, 0, 0, 0.1); 
+      }
+    }
+  }
 }

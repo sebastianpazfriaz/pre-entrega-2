@@ -1,21 +1,30 @@
 /* nosotros.scss */
 
+/* Variables */
+$color-sombra: rgba(0, 0, 0, 0.1);
+$border-radius-imagen: 8px;
+
+/* Mixin de sombra */
+@mixin sombra($h-offset, $v-offset, $blur, $spread, $color) {
+  box-shadow: $h-offset $v-offset $blur $spread $color;
+}
+
 .nosotros {
-  h2 {
-    margin-bottom: 20px;
-  }
+    h2 {
+        margin-bottom: 20px;
+    }
 
-  #imagennosotros {
-    display: block;
-    margin: 0 auto 20px; /* Centra la imagen y le da margen abajo */
-    max-width: 100%; /* Hace que la imagen ocupe el 100% del ancho de su contenedor */
-    height: auto; /* Mantiene la proporción */
-    border-radius: 8px;
-    box-shadow: 0 4px 10px rgba(0, 0, 0, 0.1);
-  }
+    #imagennosotros {
+        display: block;
+        margin: 0 auto 20px;
+        max-width: 100%;
+        height: auto;
+        border-radius: $border-radius-imagen;
+        @include sombra(0, 4px, 10px, 0, $color-sombra); /* Aplico el mixin de sombra */
+    }
 
-  p {
-    margin-top: 20px; /* Da espacio entre la imagen y el texto */
-    line-height: 1.6; /* Mejora la legibilidad */
-  }
+    p {
+        margin-top: 20px;
+        line-height: 1.6;
+    }
 }

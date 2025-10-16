@@ -12,8 +12,8 @@
   margin-bottom: 40px;
 }
 
-/* contacto.scss */
-/* Estilos para el contenedor principal de contacto */
+/* Variables */
+/* Contenedor principal del contacto */
 #contactomain {
   padding: 20px;
   min-height: calc(100vh - 150px);
@@ -22,6 +22,7 @@
   flex-direction: column;
   align-items: center; /* centrado horizontal */
   justify-content: flex-start;
+  /* Formulario */
 }
 #contactomain #formulario {
   text-align: center;
@@ -31,6 +32,19 @@
   background-color: #ffffff;
   border-radius: 8px;
   margin-top: 100px;
+  /* Estilos de los campos del formulario */
+}
+#contactomain #formulario input, #contactomain #formulario textarea {
+  width: 100%;
+  padding: 10px;
+  margin-bottom: 15px;
+  border: 1px solid #ccc;
+  border-radius: 4px;
+  box-sizing: border-box;
+  font-size: 16px;
+}
+#contactomain #formulario {
+  /* Botón */
 }
 #contactomain #formulario .button-1 {
   background-color: #EA4C89;
@@ -85,20 +99,23 @@
 }
 
 /* nosotros.scss */
+/* Variables */
+/* Mixin de sombra */
 .nosotros h2 {
   margin-bottom: 20px;
 }
 .nosotros #imagennosotros {
   display: block;
-  margin: 0 auto 20px; /* Centra la imagen y le da margen abajo */
-  max-width: 100%; /* Hace que la imagen ocupe el 100% del ancho de su contenedor */
-  height: auto; /* Mantiene la proporción */
+  margin: 0 auto 20px;
+  max-width: 100%;
+  height: auto;
   border-radius: 8px;
-  box-shadow: 0 4px 10px rgba(0, 0, 0, 0.1);
+  box-shadow: 0 4px 10px 0 rgba(0, 0, 0, 0.1);
+  /* Aplico el mixin de sombra */
 }
 .nosotros p {
-  margin-top: 20px; /* Da espacio entre la imagen y el texto */
-  line-height: 1.6; /* Mejora la legibilidad */
+  margin-top: 20px;
+  line-height: 1.6;
 }
 
 /* productos.scss */

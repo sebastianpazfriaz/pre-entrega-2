@@ -10,116 +10,120 @@ $border-radius-base: 8px;
 
 /* Estilos generales */
 body {
-    font-family: $font-family;
-    margin: 0;
-    padding: 0;
-    background-image: url("../assets/fondo.jpg");
-    background-size: cover; 
-    background-position: center center; 
-    background-attachment: fixed;
-    background-repeat: no-repeat; 
-}
+  font-family: $font-family;
+  margin: 0;
+  padding: 0;
+  background-image: url("../assets/fondo.jpg");
+  background-size: cover; 
+  background-position: center center; 
+  background-attachment: fixed;
+  background-repeat: no-repeat; 
 
-p {
+  p {
     color: $color-blanco;
+  }
 }
 
 .titulo {
-    color: $color-blanco;
-    text-align: center;
-    margin-bottom: $padding-base;
+  color: $color-blanco;
+  text-align: center;
+  margin-bottom: $padding-base;
 }
 
 /* Header */
 header {
-    background-color: $color-fondo;
-    color: $color-blanco;
-    text-align: center;
-    padding: 1px;
+  background-color: $color-fondo;
+  color: $color-blanco;
+  text-align: center;
+  padding: 1px;
 }
 
 /* Barra de navegación */
 nav {
-    background-color: $color-secundario;
-}
+  background-color: $color-secundario;
 
-nav ul {
+  ul {
     display: flex;
     justify-content: space-between; 
     list-style: none;
     margin: 0;
     padding: 0;
-}
 
-nav ul li {
-    flex: 1;
-    text-align: center;
-}
+    li {
+      flex: 1;
+      text-align: center;
 
-nav ul li a {
-    display: block;
-    color: $color-blanco;
-    text-decoration: none;
-    padding: 10px 20px;
-}
+      a {
+        display: block;
+        color: $color-blanco;
+        text-decoration: none;
+        padding: 10px 20px;
 
-nav ul li a:hover {
-    background-color: darken($color-secundario, 10%);
+        &:hover {
+          background-color: darken($color-secundario, 10%);
+        }
+      }
+    }
+  }
 }
 
 /* Contenido Principal */
 main {
-    padding: $padding-base;
-    padding-bottom: 100px;
+  padding: $padding-base;
+  padding-bottom: 100px;
 }
 
 /* Footer */
 footer {
-    height: 50px;
-    background-color: $color-fondo;
-    color: $color-blanco;
-    text-align: center;
-    padding: 10px;
-    position: fixed;
-    width: 100%;
-    bottom: 0;
+  height: 50px;
+  background-color: $color-fondo;
+  color: $color-blanco;
+  text-align: center;
+  padding: 10px;
+  position: fixed;
+  width: 100%;
+  bottom: 0;
 }
 
 /* Estilos responsivos para móviles */
 @media (max-width: 768px) {
-    nav ul li {
+  nav {
+    ul {
+      li {
         width: 100%;
         border-bottom: 1px solid #555;
-    }
 
-    nav ul li a {
-        font-size: 14px;
-        padding: 8px 10px;
-        text-align: center;
+        a {
+          font-size: 14px;
+          padding: 8px 10px;
+          text-align: center;
+        }
+      }
     }
+  }
 
-    footer {
-        position: static;
-        height: 63px;
-        padding: 8px;
-    }
+  footer {
+    position: static;
+    height: 63px;
+    padding: 8px;
+  }
 
-    .nosotros p {
-        text-align: center;
-        padding: 0 10px;
-    }
+  .nosotros p {
+    text-align: center;
+    padding: 0 10px;
+  }
 
-    #imagennosotros {
-        width: 100%;
-        margin-bottom: 20px;
-    }
+  #imagennosotros {
+    width: 100%;
+    margin-bottom: 20px;
+  }
 
-    .galeria img {
-        width: 100%;
-    }
+  .galeria img {
+    width: 100%;
+  }
 
-    .grid-productos {
-        grid-template-columns: 1fr;
-        gap: 10px;
-    }
+  .grid-productos {
+    grid-template-columns: 1fr;
+    gap: 10px;
+  }
 }

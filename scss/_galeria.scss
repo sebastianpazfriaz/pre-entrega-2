@@ -3,45 +3,49 @@
 /* Variables */
 $color-sombra: rgba(0, 0, 0, 0.1);
 $border-radius-imagen: 8px;
-$padding-base: 20px; /* Asegúrate de definir esta variable si no está definida */
 
 /* Mixin para sombra */
 @mixin sombra($h-offset, $v-offset, $blur, $spread, $color) {
   box-shadow: $h-offset $v-offset $blur $spread $color;
 }
 
-/* Galería */
-.galeria {
-  display: flex;
-  flex-direction: column;
-  align-items: center;
-  gap: 40px;
-  padding: $padding-base;
 
-  /* Sección de juegos */
+.galeria {
+  padding: 40px 20px;
+
   .game-section {
+    margin-bottom: 50px;
     text-align: center;
 
     h2 {
-      font-size: 24px;
-      margin-bottom: 15px;
+      font-size: 28px;
+      margin-bottom: 10px;
+    }
+
+    h3 {
+      font-size: 20px;
+      margin-bottom: 25px;
     }
   }
 
-  /* Imágenes dentro de la galería */
-  .imagenes {
-    display: flex;
-    flex-direction: column;
-    gap: 15px;
-    align-items: center;
-  }
 
-  /* Estilos de las imágenes */
   img {
-    width: 80%;
-    max-width: 600px;
-    height: auto;
     border-radius: $border-radius-imagen;
-    @include sombra(0, 4px, 8px, 0, $color-sombra); /* Usando el mixin para sombra */
+    @include sombra(0, 4px, 10px, 0, $color-sombra);
+  }
+}
+
+
+@media (max-width: 768px) {
+  .galeria {
+    padding: 20px 10px;
+
+    .game-section h2 {
+      font-size: 22px;
+    }
+
+    .game-section h3 {
+      font-size: 18px;
+    }
   }
 }

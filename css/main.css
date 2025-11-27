@@ -22,105 +22,82 @@
 }
 
 /* Variables */
-/* Contenedor principal del contacto */
 #contactomain {
-  padding: 20px;
-  min-height: calc(100vh - 150px);
-  box-sizing: border-box;
-  display: flex;
-  flex-direction: column;
-  align-items: center; /* centrado horizontal */
-  justify-content: flex-start;
-  /* Formulario */
+  padding-top: 40px;
+  padding-bottom: 40px;
 }
-#contactomain #formulario {
-  text-align: center;
-  width: 100%;
-  max-width: 500px; /* Limita el ancho máximo del formulario */
-  padding: 20px;
+
+/* Formulario */
+#formulario {
   background-color: #ffffff;
+  padding: 20px;
   border-radius: 8px;
-  margin-top: 100px;
-  /* Estilos de los campos del formulario */
+  box-shadow: 0 4px 12px rgba(0, 0, 0, 0.15);
+  /* Campos */
 }
-#contactomain #formulario input, #contactomain #formulario textarea {
-  width: 100%;
-  padding: 10px;
-  margin-bottom: 15px;
-  border: 1px solid #ccc;
+#formulario input,
+#formulario textarea {
   border-radius: 4px;
-  box-sizing: border-box;
   font-size: 16px;
 }
-#contactomain #formulario {
+#formulario {
   /* Botón */
 }
-#contactomain #formulario .button-1 {
+#formulario .button-1 {
   background-color: #EA4C89;
   border-radius: 8px;
-  border-style: none;
-  box-sizing: border-box;
+  border: none;
   color: #FFFFFF;
-  display: inline-block;
   font-size: 14px;
   font-weight: 500;
-  height: 40px;
-  line-height: 20px;
-  list-style: none;
-  margin: 0;
   padding: 10px 16px;
-  position: relative;
-  text-align: center;
-  vertical-align: baseline;
+  width: 100%;
+  cursor: pointer;
 }
-#contactomain #formulario .button-1:hover {
+#formulario .button-1:hover {
   background-color: #d63a76;
 }
 
 /* galeria.scss */
 /* Variables */
-/* Asegúrate de definir esta variable si no está definida */
 /* Mixin para sombra */
-/* Galería */
 .galeria {
-  display: flex;
-  flex-direction: column;
-  align-items: center;
-  gap: 40px;
-  padding: 20px;
-  /* Sección de juegos */
+  padding: 40px 20px;
 }
 .galeria .game-section {
+  margin-bottom: 50px;
   text-align: center;
 }
 .galeria .game-section h2 {
-  font-size: 24px;
-  margin-bottom: 15px;
+  font-size: 28px;
+  margin-bottom: 10px;
 }
-.galeria {
-  /* Imágenes dentro de la galería */
-}
-.galeria .imagenes {
-  display: flex;
-  flex-direction: column;
-  gap: 15px;
-  align-items: center;
-}
-.galeria {
-  /* Estilos de las imágenes */
+.galeria .game-section h3 {
+  font-size: 20px;
+  margin-bottom: 25px;
 }
 .galeria img {
-  width: 80%;
-  max-width: 600px;
-  height: auto;
   border-radius: 8px;
-  box-shadow: 0 4px 8px 0 rgba(0, 0, 0, 0.1);
-  /* Usando el mixin para sombra */
+  box-shadow: 0 4px 10px 0 rgba(0, 0, 0, 0.1);
 }
 
+@media (max-width: 768px) {
+  .galeria {
+    padding: 20px 10px;
+  }
+  .galeria .game-section h2 {
+    font-size: 22px;
+  }
+  .galeria .game-section h3 {
+    font-size: 18px;
+  }
+}
 /* nosotros.scss */
 /* Variables */
 /* Mixin de sombra */
+.nosotros {
+  padding: 40px 0;
+}
 .nosotros h2 {
   margin-bottom: 20px;
 }
@@ -130,12 +107,19 @@
   max-width: 100%;
   height: auto;
   border-radius: 8px;
+  transition: transform 0.3s ease;
   box-shadow: 0 4px 10px 0 rgba(0, 0, 0, 0.1);
-  /* Aplico el mixin de sombra */
+}
+.nosotros #imagennosotros:hover {
+  transform: scale(1.02);
 }
 .nosotros p {
   margin-top: 20px;
   line-height: 1.6;
+  background-color: rgba(0, 0, 0, 0.5);
+  padding: 20px;
+  border-radius: 15px;
+  box-shadow: 0 4px 12px 0 rgba(0, 0, 0, 0.3);
 }
 
 /* productos.scss */
@@ -150,7 +134,7 @@
 
 /* general.scss */
 /* Variables */
-/* Estilos generales */
+/* estilos generales */
 body {
   font-family: Arial, sans-serif;
   margin: 0;
@@ -160,6 +144,9 @@ body {
   background-position: center center;
   background-attachment: fixed;
   background-repeat: no-repeat;
+  display: flex;
+  flex-direction: column;
+  min-height: 100vh;
 }
 body p {
   color: white;
@@ -171,7 +158,6 @@ body p {
   margin-bottom: 20px;
 }
 
-/* Header */
 header {
   background-color: #333;
   color: white;
@@ -201,25 +187,23 @@ header {
   color: #0dcaf0 !important;
 }
 
-/* Contenido Principal */
+/* contenido principal */
 main {
   padding: 20px;
   padding-bottom: 100px;
+  flex: 1;
 }
 
-/* Footer */
 footer {
   height: 50px;
   background-color: #333;
   color: white;
   text-align: center;
   padding: 10px;
-  position: fixed;
   width: 100%;
-  bottom: 0;
+  margin-top: auto;
 }
 
-/* Estilos responsivos para móviles */
 @media (max-width: 768px) {
   nav ul li {
     width: 100%;
@@ -231,7 +215,6 @@ footer {
     text-align: center;
   }
   footer {
-    position: static;
     height: 63px;
     padding: 8px;
   }

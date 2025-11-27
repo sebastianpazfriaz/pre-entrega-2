@@ -10,6 +10,7 @@ $border-radius-imagen: 8px;
 }
 
 .nosotros {
+    padding: 40px 0; 
     h2 {
         margin-bottom: 20px;
     }
@@ -20,11 +21,21 @@ $border-radius-imagen: 8px;
         max-width: 100%;
         height: auto;
         border-radius: $border-radius-imagen;
-        @include sombra(0, 4px, 10px, 0, $color-sombra); /* Aplico el mixin de sombra */
+        transition: transform 0.3s ease;
+        @include sombra(0, 4px, 10px, 0, $color-sombra);
+
+        &:hover {
+          transform: scale(1.02);
+        }
     }
 
+    
     p {
         margin-top: 20px;
         line-height: 1.6;
+        background-color: rgba(0,0,0,0.5);
+        padding: 20px;
+        border-radius: 15px;
+        @include sombra(0, 4px, 12px, 0, rgba(0,0,0,0.3));
     }
 }

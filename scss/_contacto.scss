@@ -4,59 +4,40 @@ $color-boton-hover: #d63a76;
 $border-radius-form: 8px;
 $color-fondo: #ffffff;
 
-/* Contenedor principal del contacto */
+
 #contactomain {
+  padding-top: 40px; 
+  padding-bottom: 40px; 
+}
+
+/* Formulario */
+#formulario {
+  background-color: $color-fondo;
   padding: 20px;
-  min-height: calc(100vh - 150px);
-  box-sizing: border-box;
-  display: flex;
-  flex-direction: column;
-  align-items: center; /* centrado horizontal */
-  justify-content: flex-start;
+  border-radius: $border-radius-form;
+  box-shadow: 0 4px 12px rgba(0, 0, 0, 0.15);
 
-  /* Formulario */
-  #formulario {
-    text-align: center;
-    width: 100%;
-    max-width: 500px; /* Limita el ancho máximo del formulario */
-    padding: 20px;
-    background-color: $color-fondo;
+  /* Campos */
+  input,
+  textarea {
+    border-radius: 4px;
+    font-size: 16px;
+  }
+
+  /* Botón */
+  .button-1 {
+    background-color: $color-boton;
     border-radius: $border-radius-form;
-    margin-top: 100px;
+    border: none;
+    color: #FFFFFF;
+    font-size: 14px;
+    font-weight: 500;
+    padding: 10px 16px;
+    width: 100%; 
+    cursor: pointer;
 
-    /* Estilos de los campos del formulario */
-    input, textarea {
-      width: 100%;
-      padding: 10px;
-      margin-bottom: 15px;
-      border: 1px solid #ccc;
-      border-radius: 4px;
-      box-sizing: border-box;
-      font-size: 16px;
-    }
-
-    /* Botón */
-    .button-1 {
-      background-color: $color-boton;
-      border-radius: $border-radius-form;
-      border-style: none;
-      box-sizing: border-box;
-      color: #FFFFFF;
-      display: inline-block;
-      font-size: 14px;
-      font-weight: 500;
-      height: 40px;
-      line-height: 20px;
-      list-style: none;
-      margin: 0;
-      padding: 10px 16px;
-      position: relative;
-      text-align: center;
-      vertical-align: baseline;
-
-      &:hover {
-        background-color: $color-boton-hover;
-      }
+    &:hover {
+      background-color: $color-boton-hover;
     }
   }
 }

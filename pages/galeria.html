@@ -2,66 +2,107 @@
 <html lang="es">
 <head>
     <meta charset="UTF-8">
-    <meta name="description" content="Descubrí nuestra galeria de imagenes sobre los ultimos juegos.">
+    <meta name="description" content="Descubrí nuestra galería visual con imágenes de gameplay de los últimos juegos.">
     <title>Galería</title>
+
+    <!-- Estilos -->
     <link rel="stylesheet" href="../css/main.css">
-    <link href="https://cdn.jsdelivr.net/npm/bootstrap@5.3.8/dist/css/bootstrap.min.css" rel="stylesheet" integrity="sha384-sRIl4kxILFvY47J16cr9ZwB07vP4J8+LH7qKQnuqkuIAvNWLzeN8tE5YBujZqJLB" crossorigin="anonymous">
+    <link href="https://cdn.jsdelivr.net/npm/bootstrap@5.3.8/dist/css/bootstrap.min.css" rel="stylesheet">
 </head>
+
 <body>
     <header>
         <h1>Bienvenido a InfoGaming</h1>
     </header>
+
     <nav class="navbar navbar-expand-lg navbar-dark bg-dark">
         <div class="container">
             <a class="navbar-brand" href="../index.html">InfoGaming</a>
+
             <button class="navbar-toggler" type="button" data-bs-toggle="collapse" data-bs-target="#navMenu">
                 <span class="navbar-toggler-icon"></span>
             </button>
-                <div class="collapse navbar-collapse" id="navMenu">
-                    <ul class="navbar-nav ms-auto mb-2 mb-lg-0 gap-5">
-                        <li class="nav-item"><a class="nav-link px-4 active" href="../index.html">Home</a></li>
-                        <li class="nav-item"><a class="nav-link px-4" href="./productos.html">Productos</a></li>
-                        <li class="nav-item"><a class="nav-link px-4" href="./nosotros.html">Nosotros</a></li>
-                        <li class="nav-item"><a class="nav-link px-4" href="./galeria.html">Galería</a></li>
-                        <li class="nav-item"><a class="nav-link px-4" href="./contacto.html">Contacto</a></li>
-                    </ul>
-                </div>
+
+            <div class="collapse navbar-collapse" id="navMenu">
+                <ul class="navbar-nav ms-auto mb-2 mb-lg-0 gap-5">
+                    <li class="nav-item"><a class="nav-link px-4" href="../index.html">Home</a></li>
+                    <li class="nav-item"><a class="nav-link px-4" href="./productos.html">Productos</a></li>
+                    <li class="nav-item"><a class="nav-link px-4" href="./nosotros.html">Nosotros</a></li>
+                    <li class="nav-item"><a class="nav-link px-4 active" href="./galeria.html">Galería</a></li>
+                    <li class="nav-item"><a class="nav-link px-4" href="./contacto.html">Contacto</a></li>
+                </ul>
+            </div>
         </div>
     </nav>
-    <main>
-        <section class="galeria">
-            <div class="game-section">
-                <h2 class="titulo">Hades 2</h2>
-                <h3 class="titulo">Gameplay</h3>
-                <div class="imagenes">
-                    <img src="../assets/galeria/hades-2-gameplay-img-1.jpg" alt="gameplay de Hades 2 mostrando el combate y habilidades">
-                    <img src="../assets/galeria/hades-2-gameplay-img-2.jpg" alt="gameplay de Hades 2 con el personaje principal dialogando">
-                    <img src="../assets/galeria/hades-2-gameplay-img-3.jpg" alt="gameplay de Hades 2 en una secuencia de exploración en mazmorra">
+
+    <main class="galeria">
+
+        <!-- HADES 2 -->
+        <section class="game-section container">
+            <h2 class="titulo">Hades 2</h2>
+            <h3 class="titulo">Gameplay</h3>
+
+            <div class="row g-4">
+                <div class="col-12">
+                    <img src="../assets/galeria/hades-2-gameplay-img-1.jpg" alt="Escena de gameplay de Hades 2 con combate" class="img-fluid">
                 </div>
-            </div>
-            <div class="game-section">
-                <h2 class="titulo">Silent Hill f</h2>
-                <h3 class="titulo">Gameplay</h3>
-                <div class="imagenes">
-                    <img src="../assets/galeria/silent-hill-f-gamplay-img-1.jpg" alt="gameplay de Silent Hill f mostrando el ambiente oscuro y detallado">
-                    <img src="../assets/galeria/silent-hill-f-gamplay-img-2.jpg" alt="gameplay de Silent Hill f con el personaje explorando una zona con criaturas">
-                    <img src="../assets/galeria/silent-hill-f-gamplay-img-3.jpg" alt="gameplay de Silent Hill f durante una secuencia de terror con criaturas">
+
+                <div class="col-12">
+                    <img src="../assets/galeria/hades-2-gameplay-img-2.jpg" alt="Captura mostrando habilidades del personaje en Hades 2" class="img-fluid">
                 </div>
-            </div>
-            <div class="game-section">
-                <h2 class="titulo">Metal Gear Solid Delta Snake Eater</h2>
-                <h3 class="titulo">Gameplay</h3>
-                <div class="imagenes">
-                    <img src="../assets/galeria/metal-gear-solid-delta-gameplay-img-1.jpg" alt="gameplay de Metal Gear Solid Delta: Snake Eater en combate cuerpo a cuerpo">
-                    <img src="../assets/galeria/metal-gear-solid-delta-gameplay-img-2.jpg" alt="gameplay de Metal Gear Solid Delta: Snake Eater mostrando el modo de mira">
-                    <img src="../assets/galeria/metal-gear-solid-delta-gameplay-img-3.jpg" alt="gameplay de Metal Gear Solid Delta: Snake Eater mostrando el modo sigilo ">
+
+                <div class="col-12">
+                    <img src="../assets/galeria/hades-2-gameplay-img-3.jpg" alt="Imagen del entorno y enemigos en Hades 2" class="img-fluid">
                 </div>
             </div>
         </section>
+
+        <!-- SILENT HILL F -->
+        <section class="game-section container">
+            <h2 class="titulo">Silent Hill f</h2>
+            <h3 class="titulo">Gameplay</h3>
+
+            <div class="row g-4">
+                <div class="col-12">
+                    <img src="../assets/galeria/silent-hill-f-gamplay-img-1.jpg" alt="Escena misteriosa del gameplay de Silent Hill f" class="img-fluid">
+                </div>
+
+                <div class="col-12">
+                    <img src="../assets/galeria/silent-hill-f-gamplay-img-2.jpg" alt="Captura de ambiente oscuro en Silent Hill f" class="img-fluid">
+                </div>
+
+                <div class="col-12">
+                    <img src="../assets/galeria/silent-hill-f-gamplay-img-3.jpg" alt="Escena de confrontación en Silent Hill f" class="img-fluid">
+                </div>
+            </div>
+        </section>
+
+        <!-- METAL GEAR SOLID DELTA -->
+        <section class="game-section container">
+            <h2 class="titulo">Metal Gear Solid Delta: Snake Eater</h2>
+            <h3 class="titulo">Gameplay</h3>
+
+            <div class="row g-4">
+                <div class="col-12">
+                    <img src="../assets/galeria/metal-gear-solid-delta-gameplay-img-1.jpg" alt="Snake explorando la jungla en MGS Delta" class="img-fluid">
+                </div>
+
+                <div class="col-12">
+                    <img src="../assets/galeria/metal-gear-solid-delta-gameplay-img-2.jpg" alt="Escena de sigilo en Metal Gear Solid Delta" class="img-fluid">
+                </div>
+
+                <div class="col-12">
+                    <img src="../assets/galeria/metal-gear-solid-delta-gameplay-img-3.jpg" alt="Combate y acción en MGS Delta" class="img-fluid">
+                </div>
+            </div>
+        </section>
+
     </main>
+
     <footer>
         <p>&copy; 2025 Tu Sitio Web. Todos los derechos reservados.</p>
     </footer>
-    <script src="https://cdn.jsdelivr.net/npm/bootstrap@5.3.8/dist/js/bootstrap.bundle.min.js" integrity="sha384-FKyoEForCGlyvwx9Hj09JcYn3nv7wiPVlz7YYwJrWVcXK/BmnVDxM+D2scQbITxI" crossorigin="anonymous"></script>
+
+    <script src="https://cdn.jsdelivr.net/npm/bootstrap@5.3.8/dist/js/bootstrap.bundle.min.js"></script>
 </body>
 </html>

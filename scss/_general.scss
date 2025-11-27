@@ -8,7 +8,10 @@ $font-family: Arial, sans-serif;
 $padding-base: 20px;
 $border-radius-base: 8px;
 
-/* Estilos generales */
+
+/* estilos generales */
+
+
 body {
   font-family: $font-family;
   margin: 0;
@@ -18,6 +21,11 @@ body {
   background-position: center center;
   background-attachment: fixed;
   background-repeat: no-repeat;
+
+
+  display: flex;
+  flex-direction: column;
+  min-height: 100vh;
 
   p {
     color: $color-blanco;
@@ -30,7 +38,7 @@ body {
   margin-bottom: $padding-base;
 }
 
-/* Header */
+
 header {
   background-color: $color-fondo;
   color: $color-blanco;
@@ -61,25 +69,28 @@ header {
   }
 }
 
-/* Contenido Principal */
+
+/* contenido principal */
+
+
 main {
   padding: $padding-base;
   padding-bottom: 100px;
+  flex: 1;   
 }
 
-/* Footer */
+
 footer {
   height: 50px;
   background-color: $color-fondo;
   color: $color-blanco;
   text-align: center;
   padding: 10px;
-  position: fixed;
   width: 100%;
-  bottom: 0;
+  margin-top: auto;     
 }
 
-/* Estilos responsivos para móviles */
+
 @media (max-width: 768px) {
   nav {
     ul {
@@ -97,7 +108,6 @@ footer {
   }
 
   footer {
-    position: static;
     height: 63px;
     padding: 8px;
   }
